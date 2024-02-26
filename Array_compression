@@ -1,0 +1,39 @@
+void s1(){
+
+int n;
+cin>>n;
+
+int a[n];
+
+arin(a,0,n);
+
+map<int,int>mp;
+
+int ass=0;
+
+vi ans(n+1,0);
+
+for(int i=0;i<n;i++){
+
+    if(mp.find(a[i])==mp.end()){
+
+        mp[a[i]]=ass;
+        ass++;
+
+
+    }
+    int x=mp[a[i]];
+    ans[i]=x;
+
+
+}
+
+pn(ans,n);
+
+
+
+}
+
+
+We use this when the number limit will be -10e9 to +10e9
+
