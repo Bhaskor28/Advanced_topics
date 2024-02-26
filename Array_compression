@@ -1,3 +1,4 @@
+
 void s1(){
 
 int n;
@@ -29,11 +30,37 @@ for(int i=0;i<n;i++){
 }
 
 pn(ans,n);
+// ekhon jodi -102 kothay kothay chilo...
 
 
+vi v2[mp.size()+2];
+
+for(int i=0;i<n;i++){
+
+    v2[ans[i]].pb(i);
+
+}
+for(int i=0;i<mp.size()+1;i++){
+
+    for(int j=0;j<v2[i].size();j++){
+
+        cout<<v2[i][j]<<" ";
+
+    }
+    cout<<endl;
 
 }
 
 
-We use this when the number limit will be -10e9 to +10e9
+//for query
+
+int x=mp[-102];
+
+for(int j=0;j<v2[x].size();j++){
+
+    cout<<v2[x][j]<<" ";
+}
+cout<<endl;
+
+}
 
